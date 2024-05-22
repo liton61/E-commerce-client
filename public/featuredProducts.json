@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "name": "Sofa",
+      "image": "https://i.ibb.co/2cxD3V0/sofa.jpg",
+      "category": "Home"
+    },
+    {
+      "id": 2,
+      "name": "Chair",
+      "image": "https://i.ibb.co/HVbVcdP/chair.jpg",
+      "category": "Home"
+    },
+    {
+      "id": 3,
+      "name": "Table",
+      "image": "https://i.ibb.co/wQbsxCJ/cup.jpg",
+      "category": "Home"
+    },
+    {
+      "id": 4,
+      "name": "Lamp",
+      "image": "https://i.ibb.co/6P7xmqW/light.jpg",
+      "category": "Home"
+    },
+    {
+      "id": 5,
+      "name": "Bookshelf",
+      "image": "https://i.ibb.co/1M0sKrv/bookshelf.jpg",
+      "category": "Home"
+    },
+    {
+      "id": 6,
+      "name": "Bed",
+      "image": "https://i.ibb.co/02r9QR9/bedroom.jpg",
+      "category": "Home"
+    }
+  ]
+  

@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "price": 20,
+      "rating": 5,
+      "name": "Smartphone",
+      "category": "Electronics",
+      "image": "https://i.ibb.co/ykwdHgn/iphone15.jpg"
+    },
+    {
+      "id": 2,
+      "price": 20,
+      "rating": 5,
+      "name": "T-Shirt",
+      "category": "Fashion",
+      "image": "https://i.ibb.co/W6pB89C/t-shirt.jpg"
+    },
+    {
+      "id": 3,
+      "price": 20,
+      "rating": 5,
+      "name": "Sofa",
+      "category": "Home",
+      "image": "https://i.ibb.co/2cxD3V0/sofa.jpg"
+    }
+  ]
+  
