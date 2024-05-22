@@ -1,27 +1,74 @@
 [
-    {
-      "id": 1,
-      "price": 20,
-      "rating": 5,
-      "name": "Smartphone",
-      "category": "Electronics",
-      "image": "https://i.ibb.co/ykwdHgn/iphone15.jpg"
-    },
-    {
-      "id": 2,
-      "price": 20,
-      "rating": 5,
-      "name": "T-Shirt",
-      "category": "Fashion",
-      "image": "https://i.ibb.co/W6pB89C/t-shirt.jpg"
-    },
-    {
-      "id": 3,
-      "price": 20,
-      "rating": 5,
-      "name": "Sofa",
-      "category": "Home",
-      "image": "https://i.ibb.co/2cxD3V0/sofa.jpg"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "price": 1200,
+    "rating": 5,
+    "name": "Smartphone",
+    "category": "Electronics",
+    "brand": "Brand A",
+    "image": "https://i.ibb.co/ykwdHgn/iphone15.jpg"
+  },
+  {
+    "id": 2,
+    "price": 20,
+    "rating": 4,
+    "name": "T-Shirt",
+    "category": "Fashion",
+    "brand": "Brand B",
+    "image": "https://i.ibb.co/z4pcRjj/t-shirt.jpg"
+  },
+  {
+    "id": 3,
+    "price": 100,
+    "rating": 4.5,
+    "name": "Sofa",
+    "category": "Home",
+    "brand": "Brand C",
+    "image": "https://i.ibb.co/2cxD3V0/sofa.jpg"
+  },
+  {
+    "id": 4,
+    "price": 50,
+    "rating": 0,
+    "name": "Chair",
+    "category": "Home",
+    "brand": "Brand C",
+    "image": "https://i.ibb.co/HVbVcdP/chair.jpg"
+  },
+  {
+    "id": 5,
+    "price": 70,
+    "rating": 0,
+    "name": "Table",
+    "category": "Home",
+    "brand": "Brand C",
+    "image": "https://i.ibb.co/wQbsxCJ/cup.jpg"
+  },
+  {
+    "id": 6,
+    "price": 30,
+    "rating": 0,
+    "name": "Lamp",
+    "category": "Home",
+    "brand": "Brand C",
+    "image": "https://i.ibb.co/6P7xmqW/light.jpg"
+  },
+  {
+    "id": 7,
+    "price": 150,
+    "rating": 0,
+    "name": "Bookshelf",
+    "category": "Home",
+    "brand": "Brand C",
+    "image": "https://i.ibb.co/1M0sKrv/bookshelf.jpg"
+  },
+  {
+    "id": 8,
+    "price": 300,
+    "rating": 0,
+    "name": "Bed",
+    "category": "Home",
+    "brand": "Brand C",
+    "image": "https://i.ibb.co/02r9QR9/bedroom.jpg"
+  }
+]

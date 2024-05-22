@@ -4,10 +4,15 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 import CategoryNavigation from "../../components/CategoryNavigation/CategoryNavigation";
 import ProductDisplay from "../../components/ProductDisplay/ProductDisplay";
 import Banner from "../../components/Banner/Banner";
+import BrandFilter from "../../components/BrandFilter/BrandFilter";
+import SortingOptions from "../../components/SortingOptions/SortingOptions";
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedBrand, setSelectedBrand] = useState("All");
+  const [sortOption, setSortOption] = useState("default");
+
   return (
     <div>
       <Navbar></Navbar>
@@ -18,9 +23,16 @@ const Home = () => {
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
+        <BrandFilter
+          selectedBrand={selectedBrand}
+          setSelectedBrand={setSelectedBrand}
+        />
+        <SortingOptions sortOption={sortOption} setSortOption={setSortOption} />
         <ProductDisplay
           searchQuery={searchQuery}
           selectedCategory={selectedCategory}
+          selectedBrand={selectedBrand}
+          sortOption={sortOption}
         />
       </div>
     </div>
