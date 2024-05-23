@@ -29,7 +29,7 @@
   {
     "id": 4,
     "price": 50,
-    "rating": 0,
+    "rating": 4,
     "name": "Chair",
     "category": "Home",
     "brand": "Brand C",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "price": 70,
-    "rating": 0,
+    "rating": 4,
     "name": "Table",
     "category": "Home",
     "brand": "Brand C",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "price": 30,
-    "rating": 0,
+    "rating": 4,
     "name": "Lamp",
     "category": "Home",
     "brand": "Brand C",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "price": 150,
-    "rating": 0,
+    "rating": 4,
     "name": "Bookshelf",
     "category": "Home",
     "brand": "Brand C",
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "price": 300,
-    "rating": 0,
+    "rating": 4,
     "name": "Bed",
     "category": "Home",
     "brand": "Brand C",

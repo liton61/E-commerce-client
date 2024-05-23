@@ -2,12 +2,13 @@
 import { Rating } from "@smastrom/react-rating";
 import { useState, useEffect } from "react";
 import "@smastrom/react-rating/style.css";
+import { Link } from "react-router-dom";
 
 const ProductDisplay = ({
-  searchQuery,
-  selectedCategory,
-  selectedBrand,
-  sortOption,
+  searchQuery = "",
+  selectedCategory = "All",
+  selectedBrand = "All",
+  sortOption = "",
 }) => {
   const [products, setProducts] = useState([]);
 
@@ -26,15 +27,14 @@ const ProductDisplay = ({
   );
 
   const sortedProducts = filteredProducts.sort((a, b) => {
-    switch (sortOption) {
-      case "price-asc":
-        return a.price - b.price;
-      case "price-desc":
-        return b.price - a.price;
-      case "rating":
-        return b.rating - a.rating;
-      default:
-        return 0;
+    if (sortOption === "price-asc") {
+      return a.price - b.price;
+    } else if (sortOption === "price-desc") {
+      return b.price - a.price;
+    } else if (sortOption === "rating") {
+      return b.rating - a.rating;
+    } else {
+      return 0;
     }
   });
 
@@ -42,20 +42,18 @@ const ProductDisplay = ({
     <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-10">
       {sortedProducts.map((product) => (
         <div key={product.id}>
-          <div className="card card-compact rounded border">
-            <figure>
-              <img className="w-full h-48" src={product.image} alt="" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">{product.name}</h2>
-              <p>Price : ${product.price}</p>
-              <Rating
-                style={{ maxWidth: 80 }}
-                value={product.rating}
-                readOnly
-              />
+          <Link to={`/productDetail/${product.id}`}>
+            <div className="card card-compact rounded border">
+              <figure>
+                <img className="w-full h-48" src={product.image} alt={product.name} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">{product.name}</h2>
+                <p>Price: ${product.price}</p>
+                <Rating style={{ maxWidth: 80 }} value={product.rating} readOnly />
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       ))}
     </div>

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
+const categories = ["All", "Electronics", "Fashion", "Home"];
 const CategoryNavigation = ({ selectedCategory, setSelectedCategory }) => {
-  const categories = ["All", "Electronics", "Fashion", "Home"];
   return (
     <div>
       <h1 className="mb-5 text-xl font-bold">Category</h1>
