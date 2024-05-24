@@ -1,102 +1,334 @@
 [
   {
     "name": "Laptop",
+    "brand": "Brand A",
     "category": "Electronics",
     "price": 999.99,
-    "rating": 4.5,
-    "brand": "Brand A",
+    "availability": "In Stock",
+    "specifications": {
+      "Processor": "Intel i7",
+      "RAM": "16GB",
+      "Storage": "512GB SSD"
+    },
     "image": "https://i.ibb.co/hgwKntY/laptop.jpg",
-    "description": "A high-performance laptop suitable for all your needs."
-  },
-  {
-    "name": "Samsung S24 ultra",
-    "category": "Electronics",
-    "price": 699.99,
-    "rating": 4.3,
-    "brand": "Brand A",
-    "image": "https://i.ibb.co/gJpjZ2m/s24.jpg",
-    "description": "A sleek smartphone with the latest features."
-  },
-  {
-    "name": "Tablet",
-    "category": "Electronics",
-    "price": 499.99,
-    "rating": 4.4,
-    "brand": "Brand A",
-    "image": "https://i.ibb.co/4WDzTkL/tablet.jpg",
-    "description": "A lightweight tablet perfect for on-the-go use."
-  },
-  {
-    "name": "Headphones",
-    "category": "Electronics",
-    "price": 199.99,
-    "rating": 4.6,
-    "brand": "Brand A",
-    "image": "https://i.ibb.co/dB80JCT/headphone.jpg",
-    "description": "Noise-cancelling headphones with superior sound quality."
+    "description": "A high-performance laptop suitable for all your needs.",
+    "rating": {
+      "average": 4.5,
+      "distribution": {
+        "5": 15,
+        "4": 8,
+        "3": 3,
+        "2": 1,
+        "1": 0
+      }
+    },
+    "reviews": [
+      {
+        "username": "JohnDoe",
+        "date": "2023-04-01",
+        "rating": 5,
+        "text": "Great product, highly recommend!",
+        "likes": 10,
+        "dislikes": 2,
+        "replies": [
+          {
+            "username": "JaneSmith",
+            "date": "2023-04-02",
+            "text": "Thanks for your review, John!"
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Jeans",
+    "brand": "Brand B",
     "category": "Fashion",
     "price": 49.99,
-    "rating": 4.0,
-    "brand": "Brand B",
+    "availability": "In Stock",
+    "specifications": {
+      "Material": "Denim",
+      "Fit": "Slim Fit",
+      "Sizes": "S, M, L, XL"
+    },
     "image": "https://i.ibb.co/TPkVLhB/jeans.jpg",
-    "description": "Comfortable and stylish jeans for everyday wear."
+    "description": "Comfortable and stylish jeans for everyday wear.",
+    "rating": {
+      "average": 4.0,
+      "distribution": {
+        "5": 7,
+        "4": 5,
+        "3": 2,
+        "2": 1,
+        "1": 0
+      }
+    },
+    "reviews": [
+      {
+        "username": "FashionFanatic",
+        "date": "2023-04-03",
+        "rating": 4,
+        "text": "Love the fit and feel of these jeans!",
+        "likes": 5,
+        "dislikes": 1,
+        "replies": [
+          {
+            "username": "DenimLover",
+            "date": "2023-04-04",
+            "text": "Glad you liked them! I've been wearing these for years."
+          }
+        ]
+      }
+    ]
   },
   {
-    "name": "T-shirt",
-    "category": "Fashion",
-    "price": 19.99,
-    "rating": 4.2,
-    "brand": "Brand B",
-    "image": "https://i.ibb.co/TPSQHwJ/t-shirt.jpg",
-    "description": "A soft and comfortable T-shirt available in various colors."
+    "name": "Samsung S24 ultra",
+    "brand": "Brand A",
+    "category": "Electronics",
+    "price": 699.99,
+    "availability": "In Stock",
+    "specifications": {
+      "Display": "6.7-inch Super AMOLED",
+      "Processor": "Snapdragon 888",
+      "RAM": "8GB",
+      "Storage": "256GB"
+    },
+    "image": "https://i.ibb.co/gJpjZ2m/s24.jpg",
+    "description": "A sleek smartphone with the latest features.",
+    "rating": {
+      "average": 4.3,
+      "distribution": {
+        "5": 10,
+        "4": 12,
+        "3": 5,
+        "2": 1,
+        "1": 0
+      }
+    },
+    "reviews": [
+      {
+        "username": "TechGuru",
+        "date": "2023-04-05",
+        "rating": 5,
+        "text": "Amazing phone! Great camera and performance.",
+        "likes": 8,
+        "dislikes": 0,
+        "replies": []
+      }
+    ]
   },
   {
-    "id": 8,
-    "name": "Sneakers",
-    "category": "Fashion",
-    "price": 89.99,
-    "rating": 4.3,
-    "brand": "Brand B",
-    "image": "https://i.ibb.co/t3vkGhN/sneakers.jpg",
-    "description": "Comfortable and stylish sneakers for everyday use."
+    "name": "Tablet",
+    "brand": "Brand A",
+    "category": "Electronics",
+    "price": 499.99,
+    "availability": "Out of Stock",
+    "specifications": {
+      "Display": "10.2-inch Retina Display",
+      "Processor": "A13 Bionic",
+      "RAM": "4GB",
+      "Storage": "128GB"
+    },
+    "image": "https://i.ibb.co/4WDzTkL/tablet.jpg",
+    "description": "A lightweight tablet perfect for on-the-go use.",
+    "rating": {
+      "average": 4.4,
+      "distribution": {
+        "5": 8,
+        "4": 10,
+        "3": 3,
+        "2": 0,
+        "1": 0
+      }
+    },
+    "reviews": [
+      {
+        "username": "TechEnthusiast",
+        "date": "2023-04-06",
+        "rating": 4,
+        "text": "Great tablet for daily use. Highly recommend!",
+        "likes": 3,
+        "dislikes": 0,
+        "replies": []
+      }
+    ]
+  },
+  {
+    "name": "Headphones",
+    "brand": "Brand A",
+    "category": "Electronics",
+    "price": 199.99,
+    "availability": "In Stock",
+    "specifications": {
+      "Type": "Over-Ear",
+      "Connectivity": "Bluetooth 5.0",
+      "Battery Life": "Up to 20 hours",
+      "Noise Cancellation": "Active Noise Cancellation"
+    },
+    "image": "https://i.ibb.co/dB80JCT/headphone.jpg",
+    "description": "Noise-cancelling headphones with superior sound quality.",
+    "rating": {
+      "average": 4.6,
+      "distribution": {
+        "5": 20,
+        "4": 10,
+        "3": 2,
+        "2": 0,
+        "1": 0
+      }
+    },
+    "reviews": [
+      {
+        "username": "AudioFan",
+        "date": "2023-04-07",
+        "rating": 5,
+        "text": "Best headphones I've ever used! Great sound and comfortable fit.",
+        "likes": 15,
+        "dislikes": 0,
+        "replies": []
+      }
+    ]
   },
   {
     "name": "Sofa",
+    "brand": "Brand C",
     "category": "Home",
     "price": 399.99,
-    "rating": 4.1,
-    "brand": "Brand C",
+    "availability": "In Stock",
+    "specifications": {
+      "Material": "Fabric",
+      "Dimensions": "80\" W x 35\" D x 30\" H"
+    },
     "image": "https://i.ibb.co/2cxD3V0/sofa.jpg",
-    "description": "A spacious and comfortable sofa for your living room."
+    "description": "A spacious and comfortable sofa for your living room.",
+    "rating": {
+      "average": 4.1,
+      "distribution": {
+        "5": 10,
+        "4": 5,
+        "3": 3,
+        "2": 1,
+        "1": 0
+      }
+    },
+    "reviews": [
+      {
+        "username": "HomeOwner",
+        "date": "2023-04-08",
+        "rating": 4,
+        "text": "Beautiful sofa! Fits perfectly in my living room.",
+        "likes": 7,
+        "dislikes": 1,
+        "replies": [
+          {
+            "username": "InteriorDesigner",
+            "date": "2023-04-09",
+            "text": "Glad you like it! It complements your decor perfectly."
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Coffee Table",
+    "brand": "Brand C",
     "category": "Home",
     "price": 149.99,
-    "rating": 4.4,
-    "brand": "Brand C",
+    "availability": "In Stock",
+    "specifications": {
+      "Material": "Wood",
+      "Dimensions": "40\" L x 20\" W x 18\" H"
+    },
     "image": "https://i.ibb.co/YQLvG7R/table.jpg",
-    "description": "A stylish coffee table that fits perfectly in any living room."
+    "description": "A stylish coffee table that fits perfectly in any living room.",
+    "rating": {
+      "average": 4.4,
+      "distribution": {
+        "5": 8,
+        "4": 6,
+        "3": 2,
+        "2": 0,
+        "1": 0
+      }
+    },
+    "reviews": [
+      {
+        "username": "CoffeeLover",
+        "date": "2023-04-10",
+        "rating": 5,
+        "text": "Love this coffee table! Great quality and design.",
+        "likes": 10,
+        "dislikes": 0,
+        "replies": []
+      }
+    ]
   },
   {
     "name": "Dining Table",
+    "brand": "Brand C",
     "category": "Home",
     "price": 599.99,
-    "rating": 4.3,
-    "brand": "Brand C",
+    "availability": "In Stock",
+    "specifications": {
+      "Material": "Oak Wood",
+      "Dimensions": "72\" L x 36\" W x 30\" H"
+    },
     "image": "https://i.ibb.co/wQbsxCJ/cup.jpg",
-    "description": "A large dining table suitable for family meals."
+    "description": "A large dining table suitable for family meals.",
+    "rating": {
+      "average": 4.3,
+      "distribution": {
+        "5": 12,
+        "4": 8,
+        "3": 3,
+        "2": 1,
+        "1": 0
+      }
+    },
+    "reviews": [
+      {
+        "username": "FamilyChef",
+        "date": "2023-04-11",
+        "rating": 4,
+        "text": "Perfect dining table for family gatherings!",
+        "likes": 5,
+        "dislikes": 0,
+        "replies": []
+      }
+    ]
   },
   {
     "name": "Chair",
+    "brand": "Brand C",
     "category": "Home",
     "price": 99.99,
-    "rating": 4.2,
-    "brand": "Brand C",
+    "availability": "In Stock",
+    "specifications": {
+      "Material": "Wood",
+      "Dimensions": "24\" W x 24\" D x 36\" H"
+    },
     "image": "https://i.ibb.co/HVbVcdP/chair.jpg",
-    "description": "A comfortable and stylish chair for your home."
+    "description": "A comfortable and stylish chair for your home.",
+    "rating": {
+      "average": 4.2,
+      "distribution": {
+        "5": 8,
+        "4": 6,
+        "3": 3,
+        "2": 0,
+        "1": 0
+      }
+    },
+    "reviews": [
+      {
+        "username": "HomeDecorator",
+        "date": "2023-04-12",
+        "rating": 5,
+        "text": "Love this chair! Adds a nice touch to my decor.",
+        "likes": 3,
+        "dislikes": 0,
+        "replies": []
+      }
+    ]
   }
 ]

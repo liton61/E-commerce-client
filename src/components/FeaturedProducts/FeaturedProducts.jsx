@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const products = [
   {
-    id: 1,
+    _id: 1,
     price: 1200,
     rating: 5,
     name: "iPhone 15 Pro",
@@ -15,7 +15,7 @@ const products = [
     image: "https://i.ibb.co/ykwdHgn/iphone15.jpg",
   },
   {
-    id: 2,
+    _id: 2,
     price: 20,
     rating: 4,
     name: "T-Shirt",
@@ -24,7 +24,7 @@ const products = [
     image: "https://i.ibb.co/z4pcRjj/t-shirt.jpg",
   },
   {
-    id: 3,
+    _id: 3,
     price: 100,
     rating: 4.5,
     name: "Sofa",
@@ -58,7 +58,7 @@ const FeaturedProducts = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-10">
         {filteredProducts.map((product) => (
           <div key={product.id} className="card card-compact rounded border">
-            <Link to={`/productDetail/${product.id}`}>
+            <Link to={`/productDetail/${product._id}`}>
               <div className="card card-compact rounded border">
                 <figure>
                   <img
