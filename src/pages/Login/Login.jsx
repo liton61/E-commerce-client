@@ -6,10 +6,11 @@ import { AuthContext } from "../../authentication/Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { Link, useNavigate } from "react-router-dom";
 import google from "../../assets/google.png";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const Login = () => {
   const { googleLogin, signIn } = useContext(AuthContext);
-  // const axiosPublic = useAxiosPublic();
+  const axiosPublic = useAxiosPublic();
   const navigate = useNavigate();
 
   const handleGoogleLogin = () => {
@@ -18,14 +19,12 @@ const Login = () => {
         const usersInfo = {
           email: res.user?.email,
           name: res.user?.displayName,
-          photo: res.user?.photoURL,
           role: "user",
         };
-        // You can remove this axios request
-        // axiosPublic.post('/user', usersInfo)
-        //     .then(res => {
-        //         console.log(res.data);
-        //     })
+        axiosPublic.post('/user', usersInfo)
+            .then(res => {
+                console.log(res.data);
+            })
         navigate("/");
       })
       .catch((error) => {

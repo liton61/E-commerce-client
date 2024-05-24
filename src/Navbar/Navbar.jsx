@@ -2,9 +2,11 @@ import { useContext } from "react";
 import { AuthContext } from "../authentication/Provider/AuthProvider";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/e-shop.png";
+import useAdmin from "../hooks/useAdmin";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [isAdmin] = useAdmin();
 
   const handleSingOut = () => {
     logOut()
@@ -16,7 +18,7 @@ const Navbar = () => {
       });
   };
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 lg:px-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -50,6 +52,16 @@ const Navbar = () => {
             </li>
             <li className="font-medium">
               <NavLink
+                to="/products"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""
+                }
+              >
+                Products
+              </NavLink>
+            </li>
+            <li className="font-medium">
+              <NavLink
                 to="/about"
                 className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "active" : ""
@@ -58,6 +70,30 @@ const Navbar = () => {
                 About
               </NavLink>
             </li>
+            {user && isAdmin && (
+              <li className="font-medium">
+                <NavLink
+                  to="/dashboard/adminHome"
+                  className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "active" : ""
+                  }
+                >
+                  Dashboard
+                </NavLink>
+              </li>
+            )}
+            {user && !isAdmin && (
+              <li className="font-medium">
+                <NavLink
+                  to="/dashboard/userHome"
+                  className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "active" : ""
+                  }
+                >
+                  Dashboard
+                </NavLink>
+              </li>
+            )}
           </ul>
         </div>
         <div>
@@ -78,6 +114,16 @@ const Navbar = () => {
           </li>
           <li className="mx-2 font-medium">
             <NavLink
+              to="/ProductListing"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "active" : ""
+              }
+            >
+              Products
+            </NavLink>
+          </li>
+          <li className="mx-2 font-medium">
+            <NavLink
               to="/about"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
@@ -86,6 +132,30 @@ const Navbar = () => {
               About
             </NavLink>
           </li>
+          {user && isAdmin && (
+            <li className="mx-2 font-medium">
+              <NavLink
+                to="/dashboard/adminHome"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""
+                }
+              >
+                Dashboard
+              </NavLink>
+            </li>
+          )}
+          {user && !isAdmin && (
+            <li className="mx-2 font-medium">
+              <NavLink
+                to="/dashboard/userHome"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""
+                }
+              >
+                Dashboard
+              </NavLink>
+            </li>
+          )}
         </ul>
       </div>
       <div className="navbar-end">
@@ -98,12 +168,16 @@ const Navbar = () => {
                 isPending ? "pending" : isActive ? "active" : ""
               }
             >
-              <i className="fa-solid fa-right-from-bracket"></i> SingOut
+              <button className="font-medium">
+                <i className="fa-solid fa-right-from-bracket"></i> SingOut
+              </button>
             </NavLink>
           </div>
         ) : (
           <Link to="/login">
-            <button className="btn">Login</button>
+            <button className="font-medium">
+              <i className="fa-solid fa-right-to-bracket"></i> Login
+            </button>
           </Link>
         )}
       </div>

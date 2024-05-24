@@ -1,22 +1,24 @@
-/* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
 
-const categories = ["All", "Electronics", "Fashion", "Home"];
-const CategoryNavigation = ({ selectedCategory, setSelectedCategory }) => {
+const CategoryNavigation = () => {
   return (
     <div>
-      <h1 className="mb-5 text-xl font-bold">Category</h1>
-      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-5 lg:w-1/2">
-        {categories.map((category) => (
-          <button
-            key={category}
-            className={`px-4 py-2 border rounded ${
-              selectedCategory === category ? "bg-blue-500 text-white" : ""
-            }`}
-            onClick={() => setSelectedCategory(category)}
-          >
-            {category}
+      <div className="flex gap-5 justify-center">
+        <Link to="/electronicProduct">
+          <button className="bg-orange-600 px-3 py-2 text-white font-semibold rounded">
+            Electronics
           </button>
-        ))}
+        </Link>
+        <Link to="/fashionProduct">
+          <button className="bg-orange-600 px-3 py-2 text-white font-semibold rounded">
+            Fashion
+          </button>
+        </Link>
+        <Link to="/homeProduct">
+          <button className="bg-orange-600 px-3 py-2 text-white font-semibold rounded">
+            Home
+          </button>
+        </Link>
       </div>
     </div>
   );

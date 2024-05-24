@@ -1,74 +1,102 @@
 [
   {
-    "id": 1,
-    "price": 1200,
-    "rating": 5,
-    "name": "Smartphone",
+    "name": "Laptop",
     "category": "Electronics",
-    "brand": "Brand A",
-    "image": "https://i.ibb.co/ykwdHgn/iphone15.jpg"
-  },
-  {
-    "id": 2,
-    "price": 20,
-    "rating": 4,
-    "name": "T-Shirt",
-    "category": "Fashion",
-    "brand": "Brand B",
-    "image": "https://i.ibb.co/z4pcRjj/t-shirt.jpg"
-  },
-  {
-    "id": 3,
-    "price": 100,
+    "price": 999.99,
     "rating": 4.5,
-    "name": "Sofa",
-    "category": "Home",
-    "brand": "Brand C",
-    "image": "https://i.ibb.co/2cxD3V0/sofa.jpg"
+    "brand": "Brand A",
+    "image": "https://i.ibb.co/hgwKntY/laptop.jpg",
+    "description": "A high-performance laptop suitable for all your needs."
   },
   {
-    "id": 4,
-    "price": 50,
-    "rating": 4,
-    "name": "Chair",
-    "category": "Home",
-    "brand": "Brand C",
-    "image": "https://i.ibb.co/HVbVcdP/chair.jpg"
+    "name": "Samsung S24 ultra",
+    "category": "Electronics",
+    "price": 699.99,
+    "rating": 4.3,
+    "brand": "Brand A",
+    "image": "https://i.ibb.co/gJpjZ2m/s24.jpg",
+    "description": "A sleek smartphone with the latest features."
   },
   {
-    "id": 5,
-    "price": 70,
-    "rating": 4,
-    "name": "Table",
-    "category": "Home",
-    "brand": "Brand C",
-    "image": "https://i.ibb.co/wQbsxCJ/cup.jpg"
+    "name": "Tablet",
+    "category": "Electronics",
+    "price": 499.99,
+    "rating": 4.4,
+    "brand": "Brand A",
+    "image": "https://i.ibb.co/4WDzTkL/tablet.jpg",
+    "description": "A lightweight tablet perfect for on-the-go use."
   },
   {
-    "id": 6,
-    "price": 30,
-    "rating": 4,
-    "name": "Lamp",
-    "category": "Home",
-    "brand": "Brand C",
-    "image": "https://i.ibb.co/6P7xmqW/light.jpg"
+    "name": "Headphones",
+    "category": "Electronics",
+    "price": 199.99,
+    "rating": 4.6,
+    "brand": "Brand A",
+    "image": "https://i.ibb.co/dB80JCT/headphone.jpg",
+    "description": "Noise-cancelling headphones with superior sound quality."
   },
   {
-    "id": 7,
-    "price": 150,
-    "rating": 4,
-    "name": "Bookshelf",
-    "category": "Home",
-    "brand": "Brand C",
-    "image": "https://i.ibb.co/1M0sKrv/bookshelf.jpg"
+    "name": "Jeans",
+    "category": "Fashion",
+    "price": 49.99,
+    "rating": 4.0,
+    "brand": "Brand B",
+    "image": "https://i.ibb.co/TPkVLhB/jeans.jpg",
+    "description": "Comfortable and stylish jeans for everyday wear."
+  },
+  {
+    "name": "T-shirt",
+    "category": "Fashion",
+    "price": 19.99,
+    "rating": 4.2,
+    "brand": "Brand B",
+    "image": "https://i.ibb.co/TPSQHwJ/t-shirt.jpg",
+    "description": "A soft and comfortable T-shirt available in various colors."
   },
   {
     "id": 8,
-    "price": 300,
-    "rating": 4,
-    "name": "Bed",
+    "name": "Sneakers",
+    "category": "Fashion",
+    "price": 89.99,
+    "rating": 4.3,
+    "brand": "Brand B",
+    "image": "https://i.ibb.co/t3vkGhN/sneakers.jpg",
+    "description": "Comfortable and stylish sneakers for everyday use."
+  },
+  {
+    "name": "Sofa",
     "category": "Home",
+    "price": 399.99,
+    "rating": 4.1,
     "brand": "Brand C",
-    "image": "https://i.ibb.co/02r9QR9/bedroom.jpg"
+    "image": "https://i.ibb.co/2cxD3V0/sofa.jpg",
+    "description": "A spacious and comfortable sofa for your living room."
+  },
+  {
+    "name": "Coffee Table",
+    "category": "Home",
+    "price": 149.99,
+    "rating": 4.4,
+    "brand": "Brand C",
+    "image": "https://i.ibb.co/YQLvG7R/table.jpg",
+    "description": "A stylish coffee table that fits perfectly in any living room."
+  },
+  {
+    "name": "Dining Table",
+    "category": "Home",
+    "price": 599.99,
+    "rating": 4.3,
+    "brand": "Brand C",
+    "image": "https://i.ibb.co/wQbsxCJ/cup.jpg",
+    "description": "A large dining table suitable for family meals."
+  },
+  {
+    "name": "Chair",
+    "category": "Home",
+    "price": 99.99,
+    "rating": 4.2,
+    "brand": "Brand C",
+    "image": "https://i.ibb.co/HVbVcdP/chair.jpg",
+    "description": "A comfortable and stylish chair for your home."
   }
 ]

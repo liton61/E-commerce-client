@@ -2,10 +2,12 @@
 import { useContext } from "react";
 import { AuthContext } from "../../authentication/Provider/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
+import Swal from "sweetalert2";
 
 const Register = () => {
   const { createUser, profile } = useContext(AuthContext);
-  // const axiosPublic = useAxiosPublic();
+  const axiosPublic = useAxiosPublic();
   const navigate = useNavigate();
 
   const handleRegister = (e) => {
@@ -14,7 +16,6 @@ const Register = () => {
     const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
-    // const photo = form.photo.value;
     const role = "user";
 
     const userInfo = { name, email, password, role };
@@ -24,16 +25,15 @@ const Register = () => {
       .then((res) => {
         console.log(res.user);
         profile(name);
-        // axiosPublic.post('/user', userInfo)
-        //     .then(res => {
-        //         if (res.data.insertedId) {
-        //             Swal.fire({
-        //                 title: "Good job !",
-        //                 text: "You you have successfully register !",
-        //                 icon: "success"
-        //             });
-        //         }
-        //     })
+        axiosPublic.post("/user", userInfo).then((res) => {
+          if (res.data.insertedId) {
+            Swal.fire({
+              title: "Good job !",
+              text: "You you have successfully register !",
+              icon: "success",
+            });
+          }
+        });
         navigate("/");
       })
       .catch((error) => {
