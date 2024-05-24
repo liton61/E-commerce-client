@@ -60,16 +60,6 @@ const Navbar = () => {
                 Products
               </NavLink>
             </li>
-            <li className="font-medium">
-              <NavLink
-                to="/about"
-                className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "active" : ""
-                }
-              >
-                About
-              </NavLink>
-            </li>
             {user && isAdmin && (
               <li className="font-medium">
                 <NavLink
@@ -120,16 +110,6 @@ const Navbar = () => {
               }
             >
               Products
-            </NavLink>
-          </li>
-          <li className="mx-2 font-medium">
-            <NavLink
-              to="/about"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }
-            >
-              About
             </NavLink>
           </li>
           {user && isAdmin && (

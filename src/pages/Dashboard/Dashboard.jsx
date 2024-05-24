@@ -44,6 +44,16 @@ const Dashboard = () => {
                         <i className="fa-solid fa-house"></i>Admin Home
                       </NavLink>
                     </li>
+                    <li className="font-medium mb-2">
+                      <NavLink
+                        to="/dashboard/allUsers"
+                        className={({ isActive, isPending }) =>
+                          isPending ? "pending" : isActive ? "active" : ""
+                        }
+                      >
+                        <i className="fa-solid fa-users"></i> All Users
+                      </NavLink>
+                    </li>
                   </>
                 ) : (
                   <>
@@ -86,6 +96,16 @@ const Dashboard = () => {
                     className="hover:bg-transparent"
                   >
                     <i className="fa-solid fa-house"></i>Admin Home
+                  </NavLink>
+                </li>
+                <li className="font-medium mb-2">
+                  <NavLink
+                    to="/dashboard/allUsers"
+                    className={({ isActive, isPending }) =>
+                      isPending ? "pending" : isActive ? "active" : ""
+                    }
+                  >
+                    <i className="fa-solid fa-users"></i> All Users
                   </NavLink>
                 </li>
               </>

@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import Error from "../pages/Error/Error";
-import About from "../pages/About/About";
 import ProductDetail from "../components/ProductDetail/ProductDetail";
 import Root from "../Root/Root";
 import Login from "../pages/Login/Login";
@@ -13,6 +12,7 @@ import HomeProduct from "../pages/HomeProduct/HomeProduct";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import AdminHome from "../pages/Dashboard/AdminHome";
 import UserHome from "../pages/Dashboard/UserHome";
+import AllUsers from "../pages/Dashboard/AllUsers";
 
 const router = createBrowserRouter([
   {
@@ -23,10 +23,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-      },
-      {
-        path: "/about",
-        element: <About></About>,
       },
       {
         path: "/productListing",
@@ -66,6 +62,10 @@ const router = createBrowserRouter([
       {
         path: "adminHome",
         element: <AdminHome></AdminHome>,
+      },
+      {
+        path: "allUsers",
+        element: <AllUsers></AllUsers>,
       },
 
       // user dashboard

@@ -2,7 +2,6 @@ import { useState } from "react";
 import CategoryNavigation from "../CategoryNavigation/CategoryNavigation";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
-import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -58,26 +57,24 @@ const FeaturedProducts = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-10">
         {filteredProducts.map((product) => (
           <div key={product.id} className="card card-compact rounded border">
-            <Link to={`/productDetail/${product._id}`}>
-              <div className="card card-compact rounded border">
-                <figure>
-                  <img
-                    className="w-full h-48"
-                    src={product.image}
-                    alt={product.name}
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">{product.name}</h2>
-                  <p>Price: ${product.price}</p>
-                  <Rating
-                    style={{ maxWidth: 80 }}
-                    value={product.rating}
-                    readOnly
-                  />
-                </div>
+            <div className="card card-compact rounded border">
+              <figure>
+                <img
+                  className="w-full h-48"
+                  src={product.image}
+                  alt={product.name}
+                />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">{product.name}</h2>
+                <p>Price: ${product.price}</p>
+                <Rating
+                  style={{ maxWidth: 80 }}
+                  value={product.rating}
+                  readOnly
+                />
               </div>
-            </Link>
+            </div>
           </div>
         ))}
       </div>

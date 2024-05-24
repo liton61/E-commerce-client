@@ -13,7 +13,10 @@ const ProductListing = () => {
   useEffect(() => {
     fetch("http://localhost:5000/product")
       .then((response) => response.json())
-      .then((data) => setProducts(data))
+      .then((data) => {
+        console.log(data); // Log the fetched data to check the rating structure
+        setProducts(data);
+      })
       .catch((error) => console.error("Error fetching products:", error));
   }, []);
 
@@ -43,17 +46,17 @@ const ProductListing = () => {
         return b.price - a.price;
       }
       if (sortOption === "ratingLowToHigh") {
-        return a.rating - b.rating;
+        return a.rating.average - b.rating.average;
       }
       if (sortOption === "ratingHighToLow") {
-        return b.rating - a.rating;
+        return b.rating.average - a.rating.average;
       }
       return 0;
     });
 
   return (
     <div>
-      <Banner></Banner>
+      <Banner />
       <div className="lg:w-3/4 mx-auto lg:px-0 px-5">
         <div className="lg:flex justify-between grid grid-cols-1 gap-5 my-10">
           <div>
@@ -97,7 +100,7 @@ const ProductListing = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
           {sortedAndFilteredProducts.map((product) => (
-            <div key={product.id} className="border rounded">
+            <div key={product._id} className="border rounded">
               <Link to={`/productDetail/${product._id}`}>
                 <div className="card card-compact rounded border">
                   <figure>
@@ -112,7 +115,7 @@ const ProductListing = () => {
                     <p>Price: ${product.price}</p>
                     <Rating
                       style={{ maxWidth: 80 }}
-                      value={product.rating}
+                      value={product.rating.average}
                       readOnly
                     />
                   </div>

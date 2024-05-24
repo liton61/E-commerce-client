@@ -1,0 +1,27 @@
+[
+  {
+    "name": "John Doe",
+    "details": "This product is amazing! I highly recommend it to everyone.",
+    "rating": 5
+  },
+  {
+    "name": "Jane Smith",
+    "details": "Excellent service and great quality. Very satisfied!",
+    "rating": 4
+  },
+  {
+    "name": "Michael Johnson",
+    "details": "A wonderful experience from start to finish.",
+    "rating": 4.5
+  },
+  {
+    "name": "Emily Davis",
+    "details": "Great quality and quick delivery. Will order again.",
+    "rating": 4.7
+  },
+  {
+    "name": "William Brown",
+    "details": "Fantastic service and amazing product.",
+    "rating": 5
+  }
+]

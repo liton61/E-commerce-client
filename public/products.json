@@ -181,7 +181,7 @@
       {
         "username": "AudioFan",
         "date": "2023-04-07",
-        "rating": 5,
+        "rating": 4,
         "text": "Best headphones I've ever used! Great sound and comfortable fit.",
         "likes": 15,
         "dislikes": 0,
@@ -255,7 +255,7 @@
       {
         "username": "CoffeeLover",
         "date": "2023-04-10",
-        "rating": 5,
+        "rating": 4.5,
         "text": "Love this coffee table! Great quality and design.",
         "likes": 10,
         "dislikes": 0,
@@ -323,7 +323,7 @@
       {
         "username": "HomeDecorator",
         "date": "2023-04-12",
-        "rating": 5,
+        "rating": 4,
         "text": "Love this chair! Adds a nice touch to my decor.",
         "likes": 3,
         "dislikes": 0,

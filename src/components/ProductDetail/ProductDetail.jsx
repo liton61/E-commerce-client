@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import Banner from "../Banner/Banner";
+import Review from "../Review/Review";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -76,9 +77,17 @@ const ProductDetail = () => {
                       Dislike ({review.dislikes})
                     </button>
                   </div>
-                  <button className="text-lg text-gray-600 hover:underline mt-2">
-                    Reply
-                  </button>
+                  <div>
+                    <div className="mt-3">
+                      <textarea
+                        className="w-full border rounded p-2"
+                        rows={2}
+                      />
+                      <button className="bg-green-600 text-white px-4 py-2 rounded mt-2">
+                        Submit Reply
+                      </button>
+                    </div>
+                  </div>
                   {review.replies.map((reply) => (
                     <div
                       key={reply.username}
@@ -96,6 +105,7 @@ const ProductDetail = () => {
             </div>
           </div>
         </div>
+        <Review></Review>
       </div>
     </div>
   );
