@@ -10,7 +10,7 @@ const ProductDetail = () => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/product`)
+    fetch(`https://e-commerce-server-rust-five.vercel.app/product`)
       .then((response) => response.json())
       .then((data) => {
         const foundProduct = data.find((item) => item._id === id);

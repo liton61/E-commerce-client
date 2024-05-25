@@ -7,7 +7,7 @@ const FashionProducts = () => {
   const [fashionProducts, setFashionProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/product")
+    fetch("https://e-commerce-server-rust-five.vercel.app/product")
       .then((response) => response.json())
       .then((data) => {
         // Filter products by category "Fashion"

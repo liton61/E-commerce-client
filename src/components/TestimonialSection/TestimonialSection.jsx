@@ -8,7 +8,7 @@ import "@smastrom/react-rating/style.css";
 const TestimonialSection = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/review")
+    fetch("https://e-commerce-server-rust-five.vercel.app/review")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);
@@ -16,7 +16,7 @@ const TestimonialSection = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Show 3 cards at a time
+    slidesToShow: 3, // Show 3 cards at a time by default
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -31,11 +31,12 @@ const TestimonialSection = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768, // Medium-sized devices
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2, // Show 2 cards at a time for md devices
           slidesToScroll: 1,
-          initialSlide: 2,
+          infinite: true,
+          dots: true,
         },
       },
       {

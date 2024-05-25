@@ -11,7 +11,7 @@ const ProductListing = () => {
   const [filterBrand, setFilterBrand] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/product")
+    fetch("https://e-commerce-server-rust-five.vercel.app/product")
       .then((response) => response.json())
       .then((data) => {
         console.log(data); // Log the fetched data to check the rating structure
